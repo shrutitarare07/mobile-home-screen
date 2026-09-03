@@ -12,49 +12,161 @@
 
         .mobile-frame {
 
-            height: 360px;
             width: 180px;
             background-color: #394257;
             box-shadow: 0 0 5px 1px #404040;
             margin: 20px auto;
             border-radius: 10px;
-              padding:5px 15px;
+            padding: 5px 15px;
 
         }
 
-            .top-bar {
-                padding: 5px;
-                display: flex;
-                justify-content: end;
-              
+        .top-bar {
+            padding: 5px;
+            display: flex;
+            justify-content: end;
+            margin-bottom: 10px;
+            position: relative;
 
 
-            }
-            .top-bar-icon {
-                font-size: 10px;
-                padding: 0 5px;
-                color: #ffffff;
-            }
-            .weather-card {
-                border:solid 1px tomato;
-                height: 80px;
-                width: 100%;
-              
-               
-            }
-                
+
+
+        }
+
+        .top-bar-icon {
+            font-size: 10px;
+            margin: 4px 4px;
+            color: #ffffff;
+        }
+
+        .weather-card {
+            height: 80px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 1px #404040;
+            background-color: #33adff;
+
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 20px 0;
+            justify-content: space-evenly;
+            position: relative;
+            margin-top:20px;
+
+        }
+
+        .month-text {
+            color: white;
+            font-size: 7px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .time-text {
+            color: white;
+            font-size: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .day {
+            color: white;
+            font-size: 7px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .time-icon {
+            color: white;
+        }
+
+        .cloud-icon {
+            color: white;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .calendar-icon {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            color: white;
+
+
+        }
+
+        .cloud-position {
+            position: absolute;
+            top: 20px;
+            right: 1px;
+            
+            
+        }
+        .clock-position {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+           
+        }
+        .point {
+            position: absolute;
+            top: 20px;
+            left: 1px;
+            color: white;
+        }
+        .menu-icons{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: white;
+
+        }
+        .spotify-songs{
+            background-color:   #202533;
+            height:50px;
+            margin-top:50px ;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
             
     </style>
 </head>
 
 <body>
+
     <div class="mobile-frame">
+
+
+
         <div class="top-bar">
+
+           <span class="clock-position"><i class="fa-regular fa-clock top-bar-icon"></i></span>
+            <span class="cloud-position"><i class="fa-solid fa-cloud-sun top-bar-icon"></i></span>
+           <span class="point">19.35</span>
+
             <i class="fa-solid fa-wifi top-bar-icon"></i>
             <i class="fa-solid fa-battery-half top-bar-icon"></i>
         </div>
-        <div class="weather-card">
 
+
+        <div class="weather-card">
+           
+            <span class="calendar-icon"><i class="fa-regular fa-calendar-days "></i></span>
+            <span class="month-text">OCTOBER</span>
+            <span class="time-text">0:5</span>
+            <span class="day">THURSDAY</span>
+
+        </div>
+        <div class="spotify-songs">
+
+        </div>
+
+        <div class="menu-icons">
+             <i class="fa-solid fa-square"></i>
+             <i class="fa-solid fa-circle"></i>
+             <i class="fa-solid fa-play"></i>
         </div>
 
     </div>

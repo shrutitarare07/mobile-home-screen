@@ -37,6 +37,8 @@
             font-size: 10px;
             margin: 4px 4px;
             color: #ffffff;
+           
+            
         }
 
         .weather-card {
@@ -44,7 +46,7 @@
             width: 100%;
             border-radius: 10px;
             box-shadow: 0 0 5px 1px #404040;
-            background-color: #33adff;
+            background-color: #003399;
 
             display: flex;
             flex-direction: column;
@@ -107,6 +109,7 @@
             position: absolute;
             top: 1px;
             left: 1px;
+          
            
         }
         .point {
@@ -129,8 +132,67 @@
             margin-top:50px ;
             margin-left: 5px;
             margin-right: 5px;
+            border-radius: 5px;
+             box-shadow: 0 0 5px 1px #5c5c3d;
+             display: flex;
+            justify-content: end;
+            position: relative;
         }
-            
+        .gallary-container{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .apps-group{
+          
+            height:70px;
+            width:70px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 1px #5c5c3d;
+            color: white;
+            font-size: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .news-card{
+            height:70px;
+            width:70px;
+       
+            background-color: #202533;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 1px #5c5c3d;
+        }
+          .text{
+            color: white;
+            font-size: 10px;
+            text-align: center;
+            margin-top: 5px;
+          }  
+          .inspiration-text{
+            color: white;
+            font-size: 9px;
+            text-align: right;
+            margin-top: 5px;
+            margin-right: 10px;
+          }
+          .icon-text{
+            color: white;
+            font-size: 9px;
+            text-align: left;
+            margin-top: 5px;
+            margin-left: 10px;
+          }
+          .spotify-icon{
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            color: white;
+          }
     </style>
 </head>
 
@@ -159,8 +221,25 @@
             <span class="day">THURSDAY</span>
 
         </div>
-        <div class="spotify-songs">
+        <p class="text">Calendar</p>
+        <div class="gallary-container">
+           <div class="apps-group">
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-regular fa-message"></i>
+            <i class="fa-regular fa-clock"></i>
+            <i class="fa-brands fa-instagram"></i>
+           </div>
+      
+           <div class="news-card">
+          
+           </div>
+          
+        </div>
+         <p class="inspiration-text">Today's inspiration </p>
+              <p class="icon-text">Icons</p>
 
+        <div class="spotify-songs">
+            <span class="spotify-icon"><i class="fa-brands fa-spotify"></i></span> 
         </div>
 
         <div class="menu-icons">

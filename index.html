@@ -8,41 +8,37 @@
     <style>
         body {
             background-color: hsl(224, 59%, 58%);
-        }
+         }
 
-        .mobile-frame {
+         .mobile-frame {
 
-            width: 180px;
+            width: 180px; 
             background-color: #202533;
-            #394257;
+          
             box-shadow: 0 0 5px 1px #404040;
             margin: 20px auto;
             border-radius: 10px;
             padding: 5px 15px;
 
-        }
+         }
 
-        .top-bar {
+         .top-bar {
             padding: 5px;
             display: flex;
             justify-content: end;
             margin-bottom: 10px;
             position: relative;
+         }
 
-
-
-
-        }
-
-        .top-bar-icon {
+         .top-bar-icon {
             font-size: 10px;
             margin: 4px 4px;
             color: #ffffff;
            
             
-        }
+         }
 
-        .weather-card {
+         .weather-card {
             height: 80px;
             width: 100%;
             border-radius: 10px;
@@ -57,38 +53,38 @@
             position: relative;
             margin-top:20px;
 
-        }
+         }
 
-        .month-text {
+         .month-text {
             color: white;
             font-size: 7px;
             margin-left: 5px;
             margin-right: 5px;
-        }
+         }
 
-        .time-text {
+         .time-text {
             color: white;
             font-size: 30px;
             margin-left: 5px;
             margin-right: 5px;
-        }
+         }
 
-        .day {
+         .day {
             color: white;
             font-size: 7px;
             margin-left: 5px;
             margin-right: 5px;
-        }
+         }
 
-        .time-icon {
+         .time-icon {
             color: white;
-        }
+         }
 
         .cloud-icon {
             color: white;
             margin-left: 5px;
             margin-right: 5px;
-        }
+         }
 
         .calendar-icon {
             position: absolute;
@@ -97,7 +93,7 @@
             color: white;
 
 
-        }
+         }
 
         .cloud-position {
             position: absolute;
@@ -105,7 +101,7 @@
             right: 1px;
             
             
-        }
+         }
         .clock-position {
             position: absolute;
             top: 1px;
@@ -125,6 +121,7 @@
             margin-top: 20px;
             margin-bottom: 10px;
             color: white;
+            font-size: 10px;
 
         }
         .spotify-songs{
@@ -160,6 +157,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
+           
         }
         .news-card{
             height:70px;
@@ -182,13 +180,8 @@
             margin-top: 5px;
             margin-right: 10px;
           }
-          .icon-text{
-            color: white;
-            font-size: 9px;
-            text-align: left;
-            margin-top: 5px;
-            margin-left: 10px;
-          }
+          
+          
           .spotify-icon{
             position: absolute;
             top: 1px;
@@ -201,6 +194,27 @@
             left: 1px;
             color: white;
           }
+          .news-card-text{
+            color: white;
+            font-size: 10px;
+            text-align: left;
+            margin-top: 16px;
+            margin-left: 5px;
+          }
+          .abc{
+            position: absolute;
+            bottom: 1px;
+            left: 1px;
+           
+          }
+          .music-text{
+            color: white;
+            font-size: 9px;
+            text-align: center;
+            margin-top: 5px;
+            }
+         
+          
     </style>
 </head>
 
@@ -227,6 +241,7 @@
             <span class="month-text">OCTOBER</span>
             <span class="time-text">0:5</span>
             <span class="day">THURSDAY</span>
+            
 
         </div>
         <p class="text">Calendar</p>
@@ -239,17 +254,24 @@
            </div>
       
            <div class="news-card">
+            <p  class="news-card-text">Seize the present,trust tomorrow</p>
           
            </div>
           
         </div>
          <p class="inspiration-text">Today's inspiration </p>
-              <p class="icon-text">Icons</p>
+           
 
         <div class="spotify-songs">
             <span class="spotify-icon"><i class="fa-brands fa-spotify"></i></span> 
-            <span class="music-icon"><img src="./music.png" height="20px" width="20px" /></span>
+            <div class="abc">
+           <img src="./house-.png" height="40px" width="40px"/>
+           <img src="./music.png" height="20px" width="20px"/>
+            </div>
         </div>
+           <p class="music-text">Music</p>
+        
+
 
         <div class="menu-icons">
              <i class="fa-solid fa-square"></i>
